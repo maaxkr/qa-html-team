@@ -1,0 +1,48 @@
+/* Сторінка контактів */
+
+textarea {
+  resize: vertical;
+}
+
+#contact-form {
+  max-width: 440px;
+  margin-top: 20px;
+}
+
+.form-control,
+.form-button {
+  border: 1px solid #888888;
+  color: #222222;
+  font: inherit;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  background-color: #ffffff;
+}
+
+.form-button {
+  margin: 0 8px 8px 0;
+  padding: 8px 16px;
+  background-color: #ffdc00;
+  cursor: pointer;
+}
+
+.reset-button {
+  background-color: #eeeeee;
+}
+
+.form-button:hover {
+  background-color: #dddddd;
+}

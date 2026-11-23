@@ -4,15 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Головна - NAVI</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
-    <header>
+    <header class="site-header">
       <img src="photo/logo.png" alt="Логотип NAVI" width="120" />
       <h1>NAVI - моя улюблена команда в CS2</h1>
       <nav>
-        <a href="index.html" aria-current="page">Головна</a> |
-        <a href="pages/gallery.html">Галерея</a> |
-        <a href="pages/contact.html">Контакти</a>
+        <a class="nav-link" href="index.html" aria-current="page">Головна</a>
+        <a class="nav-link" href="pages/gallery.html">Галерея</a>
+        <a class="nav-link" href="pages/contact.html">Контакти</a>
       </nav>
     </header>
 
@@ -23,10 +25,10 @@
         означає «Народжені перемагати». Я вболіваю за NAVI у Counter-Strike 2 та
         люблю дивитися їхні матчі.
       </p>
-      <img src="photo/team.webp" alt="Командне фото NAVI" width="300" />
+      <img class="photo" src="photo/team.webp" alt="Командне фото NAVI" />
 
       <h2>Чому мені подобається NAVI</h2>
-      <ul>
+      <ul class="reasons">
         <li>Злагоджена командна гра та цікаві тактики.</li>
         <li>Напружені матчі й боротьба до останнього раунду.</li>
         <li>Яскраві моменти, які хочеться переглядати ще раз.</li>
@@ -39,9 +41,9 @@
         перемог NAVI!
       </p>
       <img
+        class="photo"
         src="photo/navi-winner2024.webp"
         alt="NAVI - переможці PGL Major Copenhagen 2024"
-        width="300"
       />
       <p>
         <a
@@ -52,7 +54,7 @@
       </p>
     </main>
 
-    <footer>
+    <footer class="site-footer">
       <p>Сайт на тему «Моя улюблена команда», присвячений NAVI у CS2.</p>
     </footer>
   </body>

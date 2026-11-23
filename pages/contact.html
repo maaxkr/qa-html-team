@@ -4,15 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Контакти - NAVI</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
   </head>
   <body>
-    <header>
+    <header class="site-header">
       <img src="../photo/logo.png" alt="Логотип NAVI" width="120" />
       <h1>NAVI - моя улюблена команда в CS2</h1>
       <nav>
-        <a href="../index.html">Головна</a> |
-        <a href="gallery.html">Галерея</a> |
-        <a href="contact.html" aria-current="page">Контакти</a>
+        <a class="nav-link" href="../index.html">Головна</a>
+        <a class="nav-link" href="gallery.html">Галерея</a>
+        <a class="nav-link" href="contact.html" aria-current="page">Контакти</a>
       </nav>
     </header>
 
@@ -26,44 +28,52 @@
 
       <h2>Залишити повідомлення</h2>
       <p>Поділися своєю думкою про NAVI або цей сайт.</p>
-      <form>
-        <div>
-          <label for="name">Ім’я:</label><br />
-          <input type="text" id="name" name="name" required />
+      <form id="contact-form">
+        <div class="form-group">
+          <label class="form-label" for="name">Ім’я:</label>
+          <input
+            class="form-control"
+            type="text"
+            id="name"
+            name="name"
+            required
+          />
         </div>
-        <br />
-        <div>
-          <label for="email">Електронна пошта:</label><br />
-          <input type="email" id="email" name="email" required />
+        <div class="form-group">
+          <label class="form-label" for="email">Електронна пошта:</label>
+          <input
+            class="form-control"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
         </div>
-        <br />
-        <div>
-          <label for="subject">Тема повідомлення:</label><br />
-          <select id="subject" name="subject" required>
+        <div class="form-group">
+          <label class="form-label" for="subject">Тема повідомлення:</label>
+          <select class="form-control" id="subject" name="subject" required>
             <option value="" disabled selected>Оберіть тему</option>
             <option value="team">Про команду NAVI</option>
             <option value="website">Відгук про сайт</option>
             <option value="other">Інше</option>
           </select>
         </div>
-        <br />
-        <div>
-          <label for="message">Повідомлення:</label><br />
+        <div class="form-group">
+          <label class="form-label" for="message">Повідомлення:</label>
           <textarea
+            class="form-control"
             id="message"
             name="message"
             rows="5"
-            cols="30"
             required
           ></textarea>
         </div>
-        <br />
-        <button type="submit">Надіслати</button>
-        <button type="reset">Очистити</button>
+        <button class="form-button" type="submit">Надіслати</button>
+        <button class="form-button reset-button" type="reset">Очистити</button>
       </form>
     </main>
 
-    <footer>
+    <footer class="site-footer">
       <p>Сайт на тему «Моя улюблена команда», присвячений NAVI у CS2.</p>
     </footer>
   </body>
